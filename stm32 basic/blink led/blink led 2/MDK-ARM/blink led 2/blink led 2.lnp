@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"blink led 2\startup_stm32f103xb.o"
+"blink led 2\main.o"
+"blink led 2\stm32f1xx_it.o"
+"blink led 2\stm32f1xx_hal_msp.o"
+"blink led 2\stm32f1xx_hal_gpio_ex.o"
+"blink led 2\stm32f1xx_hal_tim.o"
+"blink led 2\stm32f1xx_hal_tim_ex.o"
+"blink led 2\stm32f1xx_hal.o"
+"blink led 2\stm32f1xx_hal_rcc.o"
+"blink led 2\stm32f1xx_hal_rcc_ex.o"
+"blink led 2\stm32f1xx_hal_gpio.o"
+"blink led 2\stm32f1xx_hal_dma.o"
+"blink led 2\stm32f1xx_hal_cortex.o"
+"blink led 2\stm32f1xx_hal_pwr.o"
+"blink led 2\stm32f1xx_hal_flash.o"
+"blink led 2\stm32f1xx_hal_flash_ex.o"
+"blink led 2\stm32f1xx_hal_exti.o"
+"blink led 2\system_stm32f1xx.o"
+--strict --scatter "blink led 2\blink led 2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "blink led 2.map" -o "blink led 2\blink led 2.axf"
